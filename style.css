@@ -1,0 +1,174 @@
+
+/* Estilo general */
+* {
+    margin: 0; /* Añadido: Elimina márgenes por defecto */
+    padding: 0; /* Añadido: Elimina rellenos por defecto */
+    box-sizing: border-box; /* Añadido: Asegura que padding y border no alteren el tamaño del elemento */
+}
+
+body {
+    background-color: #101511 ;
+    overflow-x: hidden; /* Añadido: Evita el desplazamiento horizontal */
+    
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: start;
+    padding: 10px 20px;
+    width: 100%; /* Añadido: Asegura que el header ocupe todo el ancho */
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 918px;
+    height: 70px;
+    max-width: 1200px;
+    background-color: #23282dbf;
+    border: #2e2e2e 1px solid;
+    border-radius: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-family: 'Poppins', sans-serif;
+    color: #c0c0c0;
+    font-weight: normal;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 20px; /*necesario para mantener el radio al desaparecer*/
+    display: block;
+    margin: 0;
+    padding: 10px 20px; /* Añadido: Aumentamos el área de clic */
+}
+
+nav ul li a:hover {
+    color: #000000af;
+    background-color: #e1fa03;
+    border-radius: 20px;
+}
+
+.hero {
+    font-family: 'Poppins', sans-serif;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+/*Desarrollador web*/
+.hero h1 {
+    font-family:'syne', sans-serif;
+    font-size: 6rem; /* Ajustado: Font-size adecuado para pantallas grandes */
+    line-height: 1; /* Ajustado: Espaciado entre líneas adecuado */
+    display: flex;
+    text-align: center;
+    color: #e1fa03;
+}
+
+/*Luis Laurente*/
+.hero h2{
+    font-family: 'syne', sans-serif;
+    font-size: 1.5rem;
+}
+
+.hero p {
+    font-size: 0.875rem; /* Ajustado: Un tamaño más adecuado para el texto */
+    line-height: 1.25rem;
+    font-weight: 40;
+    margin: 10px 0;
+}
+
+.name-text{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.name-text h2{
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 1.4rem;
+    padding: 20px 35px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    border: #e1fa03 1px solid;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+
+    }
+
+    header {
+        height: 60px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    nav {
+        width: 380px;
+        height: 60px;
+    }
+
+    nav ul {
+        height: 50px;
+        width: 360px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        padding: 0 5px; 
+    }
+
+    .hero{
+        height: 350px;
+    }
+
+    /*Desarrollo Web*/
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    /*Luis Laurente*/
+    .hero h2{
+        font-size: 1.2rem; 
+    }
+
+    /*Disponible*/
+    .hero p {
+        font-size: 1rem; 
+        margin: 20px 0; 
+    }
+
+    .name-text{
+        height: 120px;
+    }
+}
