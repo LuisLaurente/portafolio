@@ -93,8 +93,11 @@ nav ul li a:hover {
 .hero p {
     font-size: 0.875rem; /* Ajustado: Un tamaño más adecuado para el texto */
     line-height: 1.25rem;
-    font-weight: 40;
     margin: 10px 0;
+    padding: 5px 20px;
+    border-radius: 1rem;
+    border: #e1fa03 0.1rem solid;
+    
 }
 
 .name-text{
@@ -118,38 +121,41 @@ nav ul li a:hover {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
-    body {
 
+    * {
+        box-sizing: border-box;
+        /*outline: 1px solid red;*/
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
     header {
-        height: 60px;
-        margin-top: 20px;
-        width: 100%;
+        height: 5.6rem; /*Altura del header*/
+
     }
 
     nav {
-        width: 380px;
-        height: 60px;
+        width: 100vw;
     }
 
     nav ul {
-        height: 50px;
-        width: 360px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        width: 21.5rem;
     }
 
     nav ul li a{
-        font-size: 15px;
+        font-size: 0.8rem;
         display: flex;
         align-items: center;
-        padding: 0 5px; 
+        padding: 0 0;
     }
 
     .hero{
-        height: 350px;
+        width: 100%;
+        height: 17rem;
     }
 
     /*Desarrollo Web*/
@@ -164,11 +170,15 @@ nav ul li a:hover {
 
     /*Disponible*/
     .hero p {
-        font-size: 1rem; 
-        margin: 20px 0; 
+        font-size: 0.8rem; 
+        margin: 0.5rem 0; 
     }
 
     .name-text{
-        height: 120px;
+        height: 7rem;
+    }
+
+    main{
+
     }
 }
