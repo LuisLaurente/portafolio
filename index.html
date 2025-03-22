@@ -3,115 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>Laurentz.dev</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #000000;
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      nav {
-        position: fixed;
-        width: 100%;
-        margin-top: 15px;
-        text-align: center;
-        z-index: 1000;
-      }
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-      }
-      section {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transform: translateY(50px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-      }
-      #inicio {
-        background: #1b1b1b;
-      }
-      #sobre {
-        background: #ddd;
-      }
-      #proyectos {
-        background: #bbb;
-      }
-      #experiencia {
-        background: #999;
-      }
-      #contacto {
-        background: #777;
-        color: white;
-      }
-      .visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .navbar {
-        display: flex;
-        justify-content: space-around;
-        background-color: #293036bf;
-        padding: 20px;
-        width: 45rem;
-        border-radius: 25px;
-      }
-      .containet-navbar {
-        display: flex;
-        justify-content: center; /*centra el contenido verticalmente*/
-      }
-      .inicio-section {
-        background-color: #2e2e2e;
-        color: rgb(197, 194, 194);
-        display: flex;
-        padding: 0;
-      }
-      .texto-inicio {
-        display: flex;
-        flex-direction: column;
-        margin-top: 0px;
-        font-size: 25px;
-      }
-      .luislaurente {
-        font-size: 70px;
-        color: rgb(87, 156, 127);
-      }
-      @media (max-width: 700px) {
-        .navbar {
-          display: flex;
-          justify-content: space-around;
-          background-color: #2d373fbf;
-          padding: 10px;
-          margin-top: 15px;
-          width: 22rem;
-          border-radius: 25px; /* Opcional: elimina el borde redondeado en móviles */
-        }
-        nav a {
-          color: white;
-          margin: 0 15px;
-          text-decoration: none;
-          font-size: 12px;
-        }
-        .texto-inicio {
-          display: flex;
-          flex-direction: column;
-          color: rgb(197, 174, 41);
-        }
-        .luislaurente {
-          font-size: 20px;
-          color: rgb(197, 174, 41)
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="containet-navbar">
@@ -125,7 +19,10 @@
     </div>
     <section class="inicio-section" id="inicio">
       <div class="texto-inicio">
-        <h1 class="luislaurente">Luis Laurente</h1>
+        <div class="container-name-icon">
+          <img class="icon-laurentz" src="\icon-laurentz.png" alt="">
+          <h1 class="luislaurente">Luis<br/>Laurente</h1>
+        </div>
         <h2>Programador Web Full-Stack</h2>
         <p>
           Con experiencia trabajando en empresas del sector en diseño y <br />
@@ -138,23 +35,5 @@
     <section id="proyectos">Proyectos</section>
     <section id="experiencia">Experiencia</section>
     <section id="contacto">Contacto</section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const sections = document.querySelectorAll("section");
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-              }
-            });
-          },
-          { threshold: 0.2 }
-        );
-        sections.forEach((section) => {
-          observer.observe(section);
-        });
-      });
-    </script>
   </body>
 </html>

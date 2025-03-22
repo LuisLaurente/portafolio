@@ -1,184 +1,119 @@
-
-/* Estilo general */
-* {
-    margin: 0; /* Añadido: Elimina márgenes por defecto */
-    padding: 0; /* Añadido: Elimina rellenos por defecto */
-    box-sizing: border-box; /* Añadido: Asegura que padding y border no alteren el tamaño del elemento */
-}
-
 body {
-    background-color: #101511 ;
-    overflow-x: hidden; /* Añadido: Evita el desplazamiento horizontal */
-    
-}
-
-header {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    height: 200px;
-    justify-content: center;
-    align-items: start;
-    padding: 10px 20px;
-    width: 100%; /* Añadido: Asegura que el header ocupe todo el ancho */
-}
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 918px;
-    height: 70px;
-    max-width: 1200px;
-    background-color: #23282dbf;
-    border: #2e2e2e 1px solid;
-    border-radius: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
     margin: 0;
     padding: 0;
-}
-
-nav ul li a {
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  nav {
+    position: fixed;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    z-index: 1000;
+  }
+  nav a {
+    color: white;
     text-decoration: none;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    font-family: 'Poppins', sans-serif;
-    color: #c0c0c0;
-    font-weight: normal;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    border-radius: 20px; /*necesario para mantener el radio al desaparecer*/
-    display: block;
-    margin: 0;
-    padding: 10px 20px; /* Añadido: Aumentamos el área de clic */
-}
-
-nav ul li a:hover {
-    color: #000000af;
-    background-color: #e1fa03;
-    border-radius: 20px;
-}
-
-.hero {
-    font-family: 'Poppins', sans-serif;
-    height: 50vh;
+    font-size: 18px;
+  }
+  section {
+    height: 100vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    color: #fff;
-}
-
-/*Desarrollador web*/
-.hero h1 {
-    font-family:'syne', sans-serif;
-    font-size: 6rem; /* Ajustado: Font-size adecuado para pantallas grandes */
-    line-height: 1; /* Ajustado: Espaciado entre líneas adecuado */
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  #inicio {
+    background: #1c1c1e;
+  }
+  .inicio-section {
+    background-color: #2e2e2e;
+    color: rgb(99, 67, 67);
     display: flex;
-    text-align: center;
-    color: #e1fa03;
-}
-
-/*Luis Laurente*/
-.hero h2{
-    font-family: 'syne', sans-serif;
-    font-size: 1.5rem;
-}
-
-.hero p {
-    font-size: 0.875rem; /* Ajustado: Un tamaño más adecuado para el texto */
-    line-height: 1.25rem;
-    margin: 10px 0;
-    padding: 5px 20px;
-    border-radius: 1rem;
-    border: #e1fa03 0.1rem solid;
-    
-}
-
-.name-text{
-    height: 250px;
+    padding: 0;
+  }  
+  .texto-inicio {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-.name-text h2{
-    font-size: 2rem;
-}
+    margin-top: 0px;
+    width: 70%;
+  }
+  .luislaurente {
+    display: flex;
+    font-size: 120px;
+    line-height: 0.8;
+    color: #f3f2f7;
+  }
+  .container-name-icon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+  .container-name-icon img{
+    width: 15rem;
+    margin-right: 20px;
+  }
+  #sobre {
+    background: #ddd;
+  }
+  #proyectos {
+    background: #bbb;
+  }
+  #experiencia {
+    background: #999;
+  }
+  #contacto {
+    background: #777;
+    color: white;
+  }
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #293036bf;
+    padding: 20px;
+    width: 45rem;
+    border-radius: 25px;
+  }
+  .containet-navbar {
+    display: flex;
+    justify-content: center; /*centra el contenido verticalmente*/
+  }
 
-.btn {
-    font-size: 1.4rem;
-    padding: 20px 35px;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 50px;
-    border: #e1fa03 1px solid;
-}
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-
-    * {
-        box-sizing: border-box;
-        /*outline: 1px solid red;*/
+  @media (max-width: 700px) {
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: #2d373fbf;
+      padding: 10px;
+      margin-top: 15px;
+      width: 22rem;
+      border-radius: 25px; /* Opcional: elimina el borde redondeado en móviles */
     }
-
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 12px;
     }
-
-    header {
-        height: 5.6rem; /*Altura del header*/
-
+    .texto-inicio {
+      display: flex;
+      flex-direction: column;
+      color: rgb(197, 174, 41);
     }
-
-    nav {
-        width: 100vw;
+    .luislaurente {
+      font-size: 20px;
+      color: rgb(197, 174, 41)
     }
-
-    nav ul {
-        width: 21.5rem;
-    }
-
-    nav ul li a{
-        font-size: 0.8rem;
-        display: flex;
-        align-items: center;
-        padding: 0 0;
-    }
-
-    .hero{
-        width: 100%;
-        height: 17rem;
-    }
-
-    /*Desarrollo Web*/
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    /*Luis Laurente*/
-    .hero h2{
-        font-size: 1.2rem; 
-    }
-
-    /*Disponible*/
-    .hero p {
-        font-size: 0.8rem; 
-        margin: 0.5rem 0; 
-    }
-
-    .name-text{
-        height: 7rem;
-    }
-
-    main{
-
-    }
-}
+  }
