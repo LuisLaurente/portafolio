@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
   }
+  :root{
+    --color-principal: #5eaf28;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -15,7 +18,7 @@ body {
     z-index: 1000;
   }
   nav a {
-    color: white;
+    color: rgb(31, 30, 30);
     text-decoration: none;
     font-size: 18px;
   }
@@ -34,19 +37,21 @@ body {
   }
   .inicio-section {
     background-color: #2e2e2e;
-    color: rgb(99, 67, 67);
     display: flex;
     padding: 0;
   }  
+  .container-derecha h2, .container-derecha p{
+    color: var(--color-principal);
+  }
   .texto-inicio {
     display: flex;
     flex-direction: column;
     margin-top: 0px;
-    width: 70%;
+    width: 80%;
   }
   .luislaurente {
-    display: flex;
     font-size: 120px;
+    margin: 0;
     line-height: 0.8;
     color: #f3f2f7;
   }
@@ -59,6 +64,11 @@ body {
   .container-name-icon img{
     width: 15rem;
     margin-right: 20px;
+  }
+  .container-derecha{
+    display: flex;
+    flex-direction: column;
+
   }
   #sobre {
     background: #ddd;
@@ -80,7 +90,7 @@ body {
   .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #293036bf;
+    background-color: var(--color-principal);
     padding: 20px;
     width: 45rem;
     border-radius: 25px;
@@ -95,7 +105,7 @@ body {
     .navbar {
       display: flex;
       justify-content: space-around;
-      background-color: #2d373fbf;
+      background-color: #447dee;
       padding: 10px;
       margin-top: 15px;
       width: 22rem;
