@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #000000;
     margin: 0;
     padding: 0;
   }
   :root{
-    --color-principal: #5eaf28;
+    --color-principal: #2894af;
   }
   html {
     scroll-behavior: smooth;
@@ -20,7 +20,7 @@ body {
   nav a {
     color: rgb(31, 30, 30);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
   }
   section {
     height: 100vh;
@@ -36,10 +36,21 @@ body {
     background: #1c1c1e;
   }
   .inicio-section {
+    height: 40rem;
     background-color: #2e2e2e;
     display: flex;
     padding: 0;
-  }  
+  }
+  .container-derecha h2{
+    font-size: 3rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+    width: 60%;
+  }
+  .container-derecha p{
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+  }
   .container-derecha h2, .container-derecha p{
     color: var(--color-principal);
   }
@@ -57,18 +68,27 @@ body {
   }
   .container-name-icon{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
   .container-name-icon img{
-    width: 15rem;
-    margin-right: 20px;
+    width: 14.5rem;
   }
   .container-derecha{
     display: flex;
     flex-direction: column;
-
+    width: 60rem;
+  }
+  .container-logos{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .container-logos img{
+    width: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
   }
   #sobre {
     background: #ddd;
@@ -101,7 +121,7 @@ body {
   }
 
 
-  @media (max-width: 700px) {
+  @media (max-width: 890px) {
     .navbar {
       display: flex;
       justify-content: space-around;
