@@ -18,29 +18,103 @@
       </nav>
     </div>
     <section class="inicio-section" id="inicio">
-      <div class="texto-inicio"> 
+      <div class="texto-inicio">
         <div class="container-name-icon">
           <img class="icon-laurentz" src="\icon-laurentz.png" alt="" />
           <div class="container-derecha">
-            <h1 class="luislaurente">Luis<br/>Laurente</h1>
+            <h1 class="luislaurente">Luis<br />Laurente</h1>
             <h2>Developer Web Full-Stack</h2>
             <p>
-              Con experiencia trabajando en empresas del sector de diseño y desarrollo de aplicaciones. Experto en crear soluciones interactivas y funcionales.
+              Con experiencia trabajando en empresas del sector de diseño y
+              desarrollo de aplicaciones. Experto en crear soluciones
+              interactivas y funcionales.
             </p>
             <div class="container-logos">
-              <img src="images/logo-laravel.svg" alt="">
-              <img src="images/php_icon.svg" alt="">
-              <img src="images/gitlab_icon.svg" alt="">
-              <img src="images/git_icon.svg" alt="">
-              <img src="images/github_logo.svg" alt="">
-              <img src="images/css_icon.svg" alt="">
-              <img src="images/html_icon.svg" alt="">
+              <img src="images/logo-laravel.svg" alt="" />
+              <img src="images/php_icon.svg" alt="" />
+              <img src="images/gitlab_icon.svg" alt="" />
+              <img src="images/git_icon.svg" alt="" />
+              <img src="images/github_logo.svg" alt="" />
+              <img src="images/css_icon.svg" alt="" />
+              <img src="images/html_icon.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="proyectos">Proyectos</section>
+    <section id="proyectos">
+      <div class="container">
+        <h2>Mis proyectos destacados</h2>
+    
+        <!-- Navbar de categorías -->
+        <nav class="navbar-proyectos">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+        </nav>
+    
+        <!-- Contenedor de proyectos -->
+        <div class="proyectos-grid">
+          
+          <!-- Proyecto Backend -->
+          <div class="proyecto backend">
+            <h3>Spring Backend</h3>
+            <p>API Rest, Backend con Spring Boot, Spring JPA y Spring Security.</p>
+            <button class="codigo-btn">📄 Código</button>
+            <div class="tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>Spring Security</span>
+              <span>Data JPA</span>
+              <span>MySQL</span>
+            </div>
+            <img src="backend1.png" alt="Spring Backend">
+          </div>
+    
+          <!-- Otro Proyecto Backend -->
+          <div class="proyecto backend">
+            <h3>API Pizzería</h3>
+            <p>API para gestionar pedidos de una pizzería con autenticación.</p>
+            <button class="codigo-btn">📄 Código</button>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </div>
+            <img src="backend2.png" alt="API Pizzería">
+          </div>
+    
+          <!-- Proyecto Frontend -->
+          <div class="proyecto frontend">
+            <h3>Dashboard React</h3>
+            <p>Panel de administración dinámico con gráficos y métricas.</p>
+            <button class="codigo-btn">📄 Código</button>
+            <div class="tags">
+              <span>React</span>
+              <span>Chart.js</span>
+              <span>Tailwind CSS</span>
+            </div>
+            <img src="frontend1.png" alt="Dashboard React">
+          </div>
+    
+          <!-- Proyecto Full Stack -->
+          <div class="proyecto fullstack">
+            <h3>E-commerce Completo</h3>
+            <p>Aplicación completa de comercio electrónico con pasarela de pagos.</p>
+            <button class="codigo-btn">📄 Código</button>
+            <div class="tags">
+              <span>Vue.js</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Stripe</span>
+            </div>
+            <img src="fullstack1.png" alt="E-commerce">
+          </div>
+    
+        </div>
+      </div>
+    </section>
     <section id="sobre">Sobre Mí</section>
     <section id="experiencia">Experiencia</section>
     <section id="contacto">Contacto</section>
