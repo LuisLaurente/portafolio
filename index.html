@@ -1,125 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laurentz.dev</title>
-  </head>
-  <body>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Principal -->
     <div class="containet-navbar">
-      <nav class="navbar">
-        <a href="#inicio">Inicio</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre">Sobre Mí</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-    <section class="inicio-section" id="inicio">
-      <div class="texto-inicio">
-        <div class="container-name-icon">
-          <img class="icon-laurentz" src="\icon-laurentz.png" alt="" />
-          <div class="container-derecha">
-            <h1 class="luislaurente">Luis<br />Laurente</h1>
-            <h2>Developer Web Full-Stack</h2>
-            <p>
-              Con experiencia trabajando en empresas del sector de diseño y
-              desarrollo de aplicaciones. Experto en crear soluciones
-              interactivas y funcionales.
-            </p>
-            <div class="container-logos">
-              <img src="images/logo-laravel.svg" alt="" />
-              <img src="images/php_icon.svg" alt="" />
-              <img src="images/gitlab_icon.svg" alt="" />
-              <img src="images/git_icon.svg" alt="" />
-              <img src="images/github_logo.svg" alt="" />
-              <img src="images/css_icon.svg" alt="" />
-              <img src="images/html_icon.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="proyectos">
-      <div class="container">
-        <h2>Mis proyectos destacados</h2>
-    
-        <!-- Navbar de categorías -->
-        <nav class="navbar-proyectos">
-          <button class="filter-btn active" data-filter="todos">Todos</button>
-          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-          <button class="filter-btn" data-filter="frontend">Frontend</button>
-          <button class="filter-btn" data-filter="backend">Backend</button>
+        <nav class="navbar">
+            <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+            <a href="#about"><i class="fas fa-user"></i> Sobre mí</a>
+            <a href="#experience"><i class="fas fa-laptop-code"></i> Experiencia</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contacto</a>
         </nav>
-    
-        <!-- Contenedor de proyectos -->
-        <div class="proyectos-grid">
-          
-          <!-- Proyecto Backend -->
-          <div class="proyecto backend">
-            <h3>Spring Backend</h3>
-            <p>API Rest, Backend con Spring Boot, Spring JPA y Spring Security.</p>
-            <button class="codigo-btn">📄 Código</button>
-            <div class="tags">
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>Spring Security</span>
-              <span>Data JPA</span>
-              <span>MySQL</span>
+    </div>
+
+    <!-- Sección de Inicio -->
+    <section class="inicio-section" id="inicio">
+        <div class="texto-inicio">
+            <div class="container-name-icon">
+                <img class="icon-laurentz" src="/icon-laurentz.png" alt="Luis Laurente Icon" />
+                <div class="container-derecha">
+                    <h1 class="luislaurente">Luis Laurente</h1>
+                    <h2>Developer Web Full-Stack</h2>
+                    <p>
+                        Con experiencia trabajando en empresas del sector de diseño y
+                        desarrollo de aplicaciones. Experto en crear soluciones
+                        interactivas y funcionales.
+                    </p>
+                    <div class="container-logos">
+                        <img src="images/logo-laravel.svg" alt="Laravel" />
+                        <img src="images/php_icon.svg" alt="PHP" />
+                        <img src="images/gitlab_icon.svg" alt="GitLab" />
+                        <img src="images/git_icon.svg" alt="Git" />
+                        <img src="images/github_logo.svg" alt="GitHub" />
+                        <img src="images/css_icon.svg" alt="CSS" />
+                        <img src="images/html_icon.svg" alt="HTML" />
+                    </div>
+                </div>
             </div>
-            <img src="backend1.png" alt="Spring Backend">
-          </div>
-    
-          <!-- Otro Proyecto Backend -->
-          <div class="proyecto backend">
-            <h3>API Pizzería</h3>
-            <p>API para gestionar pedidos de una pizzería con autenticación.</p>
-            <button class="codigo-btn">📄 Código</button>
-            <div class="tags">
-              <span>Node.js</span>
-              <span>Express</span>
-              <span>MongoDB</span>
-            </div>
-            <img src="backend2.png" alt="API Pizzería">
-          </div>
-    
-          <!-- Proyecto Frontend -->
-          <div class="proyecto frontend">
-            <h3>Dashboard React</h3>
-            <p>Panel de administración dinámico con gráficos y métricas.</p>
-            <button class="codigo-btn">📄 Código</button>
-            <div class="tags">
-              <span>React</span>
-              <span>Chart.js</span>
-              <span>Tailwind CSS</span>
-            </div>
-            <img src="frontend1.png" alt="Dashboard React">
-          </div>
-    
-          <!-- Proyecto Full Stack -->
-          <div class="proyecto fullstack">
-            <h3>E-commerce Completo</h3>
-            <p>Aplicación completa de comercio electrónico con pasarela de pagos.</p>
-            <button class="codigo-btn">📄 Código</button>
-            <div class="tags">
-              <span>Vue.js</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-              <span>Stripe</span>
-              <span>Muchos</span>
-              <span>Premios</span>
-              <span>Sorpresa</span>
-            </div>
-            <img src="fullstack1.png" alt="E-commerce">
-          </div>
-    
         </div>
-      </div>
     </section>
-    <section id="sobre">Sobre Mí</section>
-    <section id="experiencia">Experiencia</section>
-    <section id="contacto">Contacto</section>
-  </body>
+
+    <!-- Sección de "Sobre mí" -->
+    <section id="about" class="about">
+        <div class="container">
+            <h1 class="floating">Hola, soy Luis Laurente</h1>
+            <p>Desarrollador freelance desde 2020. Me apasiona crear experiencias digitales únicas, desde aplicaciones móviles hasta juegos interactivos que marcan la diferencia.</p>
+            <div class="technologies">
+                <div class="technology"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="technology"><i class="fab fa-python"></i> Python</div>
+                <div class="technology"><i class="fab fa-react"></i> React</div>
+                <div class="technology"><i class="fas fa-mobile-alt"></i> Flutter</div>
+                <div class="technology"><i class="fas fa-gamepad"></i> Unity</div>
+                <div class="technology"><i class="fab fa-node-js"></i> Node.js</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de "Experiencia" -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h1>Mi Experiencia</h1>
+            <div class="experience-nav">
+                <a href="#" class="category-btn active" data-category="todos">Todos los Proyectos</a>
+                <a href="#" class="category-btn" data-category="frontend">Frontend</a>
+                <a href="#" class="category-btn" data-category="backend">Backend</a>
+            </div>
+            
+            <div class="experience-content">
+                <!-- Todos los proyectos -->
+                <div class="project-container active" id="todos">
+                    <div class="project-card">
+                        <h2>Aplicación de Gestión de Tareas</h2>
+                        <p>Desarrollé una aplicación móvil completa para gestión de tareas con Flutter, implementando sincronización en tiempo real y notificaciones personalizadas.</p>
+                        <p>El proyecto incluye autenticación de usuarios, almacenamiento en la nube y estadísticas de productividad.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Dart</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h2>E-commerce para Tienda de Ropa</h2>
+                        <p>Diseñé y desarrollé una plataforma de comercio electrónico con Laravel y Vue.js para una tienda de ropa local.</p>
+                        <p>Implementé pasarelas de pago, sistema de inventario y panel de administración personalizado.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h2>Videojuego Educativo</h2>
+                        <p>Creé un videojuego 2D educativo utilizando Unity y C# para una institución educativa.</p>
+                        <p>El juego enseña conceptos matemáticos a través de mecánicas interactivas y sistemas de progresión.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Adobe Illustrator</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h2>API REST para Gestión Hospitalaria</h2>
+                        <p>Desarrollé una API completa para un sistema de gestión hospitalaria utilizando Node.js y MongoDB.</p>
+                        <p>El sistema gestiona citas, historiales médicos y comunicación entre pacientes y médicos.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyectos Frontend -->
+                <div class="project-container" id="frontend">
+                    <div class="project-card">
+                        <h2>Dashboard Analítico</h2>
+                        <p>Desarrollé un dashboard interactivo para visualización de datos usando React y D3.js.</p>
+                        <p>Implementé gráficos personalizados, filtros avanzados y exportación de informes en varios formatos.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Styled Components</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h2>Rediseño de Sitio Corporativo</h2>
+                        <p>Rediseñé completamente el sitio web de una empresa internacional con foco en la experiencia de usuario y rendimiento.</p>
+                        <p>Mejoré la velocidad de carga en un 70% e implementé animaciones personalizadas.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">SASS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h2>Aplicación Web PWA</h2>
+                        <p>Desarrollé una aplicación web progresiva para un servicio de delivery que funciona sin conexión.</p>
+                        <p>Implementé notificaciones push, geolocalización y sincronización en segundo plano.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PWA</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Workbox</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyectos Backend -->
+                <div class="project-container" id="backend">
+                    <div class="project-card">
+                        <h2>Sistema de Microservicios</h2>
+                        <p>Diseñé e implementé una arquitectura de microservicios para una plataforma de streaming utilizando Python.</p>
+                        <p>Incluye balanceo de carga, tolerancia a fallos y monitoreo en tiempo real.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h2>API para Procesamiento de Imágenes</h2>
+                        <p>Desarrollé una API que procesa imágenes en tiempo real utilizando algoritmos de visión por computadora.</p>
+                        <p>Implementé reconocimiento facial, detección de objetos y filtros en tiempo real.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">AWS Lambda</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h2>Sistema de Gestión de Base de Datos</h2>
+                        <p>Creé un sistema completo para la migración y gestión de datos para una institución financiera.</p>
+                        <p>El sistema maneja millones de registros con optimización de consultas y backup automatizado.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de "Contacto" -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h1>¿Interesado en trabajar juntos?</h1>
+            <p>Estoy abierto a nuevas oportunidades y colaboraciones. No dudes en contactarme para discutir tu proyecto.</p>
+            
+            <a href="mailto:luis@example.com" class="btn">
+                <i class="fas fa-envelope"></i> Enviar correo
+            </a>
+            
+            <div class="contact-icons">
+                <a href="#" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="contact-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="contact-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="contact-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
